@@ -3,11 +3,11 @@
 import java.io.*;
 import java.util.regex.*;
 
-public class employeelisting
+public class Employeelisting
 {
 	public static void main(string[] args)
 	{
-		bufferedreader b=new bufferedreader(new filereader("employee.csv"));
+		bufferedreader b=new Bufferedreader(new filereader("employee.csv"));
 		string line=b.readline();
 		
 		while(line != null)
@@ -17,7 +17,7 @@ public class employeelisting
 			
 			while(m1.find())
 			{		
-				printwriter pw1=new printwriter("Manager.csv");
+				printwriter pw1=new Printwriter("Manager.csv");
 				pw1.println(line);
 			}
 
@@ -27,7 +27,7 @@ public class employeelisting
 			
 			while(m2.find())
 			{
-				printwriter pw2=new printwriter("single_name_employee.csv");   
+				printwriter pw2=new Printwriter("single_name_employee.csv");   
 				pw2.println(line);
 			}
 
