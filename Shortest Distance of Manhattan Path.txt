@@ -18,7 +18,7 @@ public class ManShortPath
 		scanner s=new Scanner(system.in);
 		System.out.println("Enter the coordinate for X axis :");
 		x=s.nextint();
-		system.out.println("Enter the coordinate for Y axis :");
+		System.out.println("Enter the coordinate for Y axis :");
 		y=s.nextint();
 		start=area[x][y];
 		scanner s1=new Scanner(system.in);
