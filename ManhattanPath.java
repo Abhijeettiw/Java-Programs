@@ -15,28 +15,28 @@ public class ManShortPath
 	public void input(int[][] area)
 	{
 		
-		scanner s=new Scanner(system.in);
+		Scanner s = new Scanner(system.in);
 		System.out.println("Enter the coordinate for X axis :");
-		x=s.nextint();
+		x=s.nextInt();
 		System.out.println("Enter the coordinate for Y axis :");
-		y=s.nextint();
+		y=s.nextInt();
 		start=area[x][y];
-		scanner s1=new Scanner(system.in);
+		Scanner s1=new Scanner(system.in);
 		System.out.println("Enter the End Point in directions(eg- NWES) :");
-		end=s1.nextline();
+		end=s1.nextLine();
 	}
 
 	public boolean validation()
 	{
 		while(end != null)
 		{
-			char[] ch=end.tochar();
+			char[] ch=end.toChar();
 			
-			for(int i =0;i<ch.length;i++)
+			for(int i =0; i<ch.length;i++)
 			{
 				if(i != N || i != E || != S || i != W)
 				{
-					system.out.println("Invalid End point");
+					System.out.println("Invalid End point");
 				}
 				else
 				{
@@ -50,7 +50,7 @@ public class ManShortPath
 	{
 		if(yes==true)
 		{
-			char[] ch1=end.tochar();
+			char[] ch1=end.toChar();
 			
 			for(int i=0;i<ch1.length;i++)
 			{
@@ -82,7 +82,7 @@ public class ManShortPath
 
 	public static void main(string[] args)
 	{
-		int[][] area=new int[10][10];
+		Int[][] area=new Int[10][10];
 		ManShortPath msp=new ManShortPath();
 		msp.input(area[][]);	
 		msp.validation();
