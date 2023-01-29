@@ -9,8 +9,8 @@ public class combinationsort
 	int size=0;
 	public static void main(string[] args)
 	{
-		scanner s1=new scanner(system.in);
-		arraylist<string> l1=new arraylist<string>();
+		scanner s1=new Scanner(system.in);
+		arraylist<string> l1=new Arraylist<string>();
 		system.out.println("Enter size of list:");
 		size=s1.nextint();
 
@@ -19,8 +19,8 @@ public class combinationsort
 			l1.add(s1.nextstring());
 		}
 
-		scanner s2=new scanner(system.in);
-		arraylist<integer> l2=new arraylist<integer>();
+		scanner s2=new Scanner(system.in);
+		arraylist<integer> l2=new Srraylist<integer>();
 		
 		for(int i =0;i<size;i++)
 		{
@@ -28,7 +28,7 @@ public class combinationsort
 		}
 
 		collections.sort(l1);
-		arraylist<string> l3=new arraylist<string>();
+		arraylist<string> l3=new Arraylist<string>();
 		
 		for(int i =0;i<size;i++)
 		{
@@ -37,15 +37,15 @@ public class combinationsort
 		}
 
 		system.out.println(l3);
-		arraylist<Integer> l4=new arraylist<integer>(new mycomparator);
-		arraylist<character> l5=new arraylist<character>();
+		arraylist<Integer> l4=new Arraylist<integer>(new mycomparator);
+		arraylist<character> l5=new Arraylist<character>();
 		
 		for(int i=0;i<size;i++)
 		{
 			l5.add(l1.toChar(i));
 		}
 		
-		arraylist<integer> l6=new arraylist<integer>();
+		arraylist<integer> l6=new Arraylist<integer>();
 		
 		for(char c ='a';c<'z';c++)
 		{
@@ -61,7 +61,7 @@ public class combinationsort
 		}
 	
 		
-		arraylist<string> l7=new arraylist<string>();
+		arraylist<string> l7=new Arraylist<string>();
 
 		for(int i =0;i<size;i++)
 		{
@@ -69,11 +69,11 @@ public class combinationsort
 			m++;
 		}
 
-		system.out.println(l7);
+		System.out.println(l7);
 	}
 }
 
-class mycomparator implements comparator
+class Mycomparator implements Comparator
 {
 	public int compare(object o1, object o2)
 	{
