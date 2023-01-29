@@ -12,22 +12,20 @@ public class ManShortPath
 	string end=null;
 	boolean yes=false;
 
-	\\ taking inpunt of Start point and End point
 	public void input(int[][] area)
 	{
 		
-		scanner s=new scanner(system.in);
-		system.out.println("Enter the coordinate for X axis :");
+		scanner s=new Scanner(system.in);
+		System.out.println("Enter the coordinate for X axis :");
 		x=s.nextint();
 		system.out.println("Enter the coordinate for Y axis :");
 		y=s.nextint();
 		start=area[x][y];
-		scanner s1=new scanner(system.in);
-		system.out.println("Enter the End Point in directions(eg- NWES) :");
+		scanner s1=new Scanner(system.in);
+		System.out.println("Enter the End Point in directions(eg- NWES) :");
 		end=s1.nextline();
 	}
 
-	\\ Validation of EndPoint
 	public boolean validation()
 	{
 		while(end != null)
@@ -48,7 +46,6 @@ public class ManShortPath
 		}
 	}
 
-	\\ Finding Shortest Distance
 	public int shortestdist()
 	{
 		if(yes==true)
