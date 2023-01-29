@@ -27,7 +27,8 @@ public class employeelisting
 			
 			while(m2.find())
 			{
-				printwriter pw2=new printwriter                                                                                         ("single_name_employee.csv");
+				printwriter pw2=new printwriter("single_name_employee.csv");   
+				pw2.println(line);
 			}
 
 			line=b.readline();
