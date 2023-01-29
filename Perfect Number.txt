@@ -1,13 +1,13 @@
 // Perfect Number
 
 import java.util.scanner.*;
-public class perfectno
+public class Perfectno
 {
 	public static void main(string[] args)
 	{
 		int a=0;
-		scanner s=new scanner(system.in);
-		system.out.println("Enter the number :")
+		scanner s=new Scanner(system.in);
+		System.out.println("Enter the number :")
 		a=s.nextint();
 		int b=a-1;
 		int sum=0;
