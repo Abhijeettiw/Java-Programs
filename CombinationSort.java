@@ -3,32 +3,32 @@
 import java.util.scanner.*;
 import java.util.*;
 
-public class combinationsort
+public class Combinationsort
 {
 	int k=0,m=0;
 	int size=0;
 	public static void main(string[] args)
 	{
-		scanner s1=new Scanner(system.in);
-		arraylist<string> l1=new Arraylist<string>();
-		system.out.println("Enter size of list:");
-		size=s1.nextint();
+		Scanner s1=new Scanner(system.in);
+		Srraylist<string> l1=new Arraylist<string>();
+		System.out.println("Enter size of list:");
+		size=s1.nextInt();
 
 		for(int i =0;i<size;i++)
 		{
-			l1.add(s1.nextstring());
+			l1.add(s1.nextString());
 		}
 
-		scanner s2=new Scanner(system.in);
-		arraylist<integer> l2=new Srraylist<integer>();
+		Scanner s2=new Scanner(system.in);
+		Arraylist<Integer> l2=new Arraylist<Integer>();
 		
 		for(int i =0;i<size;i++)
 		{
-			l1.add(s2.nextint());
+			l1.add(s2.nextInt());
 		}
 
 		collections.sort(l1);
-		arraylist<string> l3=new Arraylist<string>();
+		Arraylist<String> l3=new Arraylist<String>();
 		
 		for(int i =0;i<size;i++)
 		{
@@ -36,20 +36,20 @@ public class combinationsort
 			k++;
 		}
 
-		system.out.println(l3);
-		arraylist<Integer> l4=new Arraylist<integer>(new mycomparator);
-		arraylist<character> l5=new Arraylist<character>();
+		System.out.println(l3);
+		Arraylist<Integer> l4=new Arraylist<integer>(new Mycomparator);
+		Arraylist<Character> l5=new Arraylist<Character>();
 		
 		for(int i=0;i<size;i++)
 		{
 			l5.add(l1.toChar(i));
 		}
 		
-		arraylist<integer> l6=new Arraylist<integer>();
+		Arraylist<integer> l6 = new Arraylist<integer>();
 		
 		for(char c ='a';c<'z';c++)
 		{
-			for(int i =0;i<size;i++)
+			for(int i = 0; i < size; i++)
 			{	
 				if(c==l5[i])
 				{
@@ -61,9 +61,9 @@ public class combinationsort
 		}
 	
 		
-		arraylist<string> l7=new Arraylist<string>();
+		Arraylist<String> l7=new Arraylist<String>();
 
-		for(int i =0;i<size;i++)
+		for(int i =0 ;i<size; i++)
 		{
 			l7[m]=l1[i]+l6[i];
 			m++;
