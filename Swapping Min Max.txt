@@ -2,7 +2,6 @@
 
 public classs swappingminmax
 {
-	//swapping of element in second and second last between arrays
 	public static void swap(int[] a,int[] b)
 	{
 		int j=0;
@@ -26,7 +25,6 @@ public classs swappingminmax
 
 	}
 
-	//searching of max value after multiplication of arrays
 	public static int maxaftermulti(int[] a,int[] b)
 	{
 		Integer n=Integer.MIN_VALUE;
