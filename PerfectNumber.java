@@ -6,9 +6,9 @@ public class Perfectno
 	public static void main(string[] args)
 	{
 		int a=0;
-		scanner s=new Scanner(system.in);
+		Scanner s=new Scanner(system.in);
 		System.out.println("Enter the number :")
-		a=s.nextint();
+		a=s.nextInt();
 		int b=a-1;
 		int sum=0;
 		
@@ -22,11 +22,11 @@ public class Perfectno
 		
 		if(sum==a)
 		{
-			system.out.println("True");
+			System.out.println("True");
 		}
 		else
 		{	
-			system.out.println("False");
+			System.out.println("False");
 		}
 	}
 }
