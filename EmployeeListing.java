@@ -7,8 +7,8 @@ public class Employeelisting
 {
 	public static void main(string[] args)
 	{
-		bufferedreader b=new Bufferedreader(new filereader("employee.csv"));
-		string line=b.readline();
+		Bufferedreader b=new Bufferedreader(new filereader("employee.csv"));
+		string line=b.readLine();
 		
 		while(line != null)
 		{
@@ -17,7 +17,7 @@ public class Employeelisting
 			
 			while(m1.find())
 			{		
-				printwriter pw1=new Printwriter("Manager.csv");
+				Printwriter pw1 = new Printwriter("Manager.csv");
 				pw1.println(line);
 			}
 
@@ -27,11 +27,11 @@ public class Employeelisting
 			
 			while(m2.find())
 			{
-				printwriter pw2=new Printwriter("single_name_employee.csv");   
+				Printwriter pw2=new Printwriter("single_name_employee.csv");   
 				pw2.println(line);
 			}
 
-			line=b.readline();
+			line=b.readLine();
 			pw2.flush();
 		}
 		b.close();
