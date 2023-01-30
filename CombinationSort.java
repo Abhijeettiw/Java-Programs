@@ -10,7 +10,7 @@ public class Combinationsort
 	public static void main(string[] args)
 	{
 		Scanner s1=new Scanner(system.in);
-		Srraylist<string> l1=new Arraylist<string>();
+		Arraylist<String> l1=new Arraylist<String>();
 		System.out.println("Enter size of list:");
 		size=s1.nextInt();
 
