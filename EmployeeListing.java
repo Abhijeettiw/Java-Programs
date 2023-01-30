@@ -12,7 +12,7 @@ public class Employeelisting
 		
 		while(line != null)
 		{
-			pattern p1=patter.compile("Manager,R&D");
+			pattern p1=pattern.compile("Manager,R&D");
 			matcher m1=p1.matcher(line);
 			
 			while(m1.find())
