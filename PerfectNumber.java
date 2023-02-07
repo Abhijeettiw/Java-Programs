@@ -1,14 +1,19 @@
 // Perfect Number
 
-import java.util.scanner.*;
-public class Perfectno
+import java.util.Scanner;
+
+public class Perfectnumber
 {
-	public static void main(string[] args)
+	public Perfectnumber() {
+	}
+
+	public static void main(String[] args)
 	{
 		int a=0;
-		Scanner s=new Scanner(system.in);
-		System.out.println("Enter the number :")
-		a=s.nextInt();
+		try (Scanner s = new Scanner(System.in)) {
+			System.out.println("Enter the number :");
+			a=s.nextInt();
+		}
 		int b=a-1;
 		int sum=0;
 		
